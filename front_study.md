@@ -66,4 +66,17 @@
 }
 ```
 
+### padding, margin 
+
+- padding: 박스 테두리와 안쪽 콘텐츠 사이의 여백
+- margin: 박스 테두리 바깥의 여백  
+- em: 상위 요소의 글자 크기를 1em으로 둠
+- rem: 최상위 요소의 글자 크기를 1rem으로 둠
+
+```html
+<div>
+   <!-- 줄 바꿈 없이 div 박스 순서대로 표시 -->
+  <div style="display: inline-block; padding: 20px">홈</div>
+</div>
+```
 **references: [코딩 커뮤니티(코뮤)](https://cafe.naver.com/codeuniv/9806)**  
