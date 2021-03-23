@@ -79,4 +79,54 @@
   <div style="display: inline-block; padding: 20px">홈</div>
 </div>
 ```
+
+### position
+: 특정 위치에 고정되어 있도록 만들 때 주로 유용하게 쓰임
+
+#### - static
+: position 속성을 따로 설정하지 않았을 때
+#### - relative
+: 상대적으로 위치 지정 가능
+```html
+<div
+   style="
+     position: relative;
+     top:100px;
+     left:100px;
+     bottom:100px;
+     right:100px;
+     ">
+</div>
+```
+#### - absolute
+: 상위 요소 기준으로 상대 위치 지정
+
+```html
+<div 
+     style="
+        position: relative;
+        top: 100px;
+        left: 100px;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(218, 146, 224);">
+        
+    <div 
+         style="
+            position: absolute;
+            background-color: rgb(145, 195, 235);
+            top: 50px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            ">
+    </div>
+</div>
+```
+#### - fixed 
+: 화면을 기준으로 상대적인 위치 설정
+
+
+
+
 **references: [코딩 커뮤니티(코뮤)](https://cafe.naver.com/codeuniv/9806)**  
