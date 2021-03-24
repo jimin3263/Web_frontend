@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/mini-homepage/home.html",
+            "url": "file:///C:/web-homepage/home.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
