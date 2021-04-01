@@ -101,16 +101,15 @@
                         <div class="diary-contents"> 오늘은 한빈이 생일 .. 🎂 <br> 생일 축하해 🎉 그리고 .. 앞으로 <br>  울ㅈㅣ않기 <br>억ㅈ ㅣ로라도 웃기 <br>ㄴㅏ랑 약속해 ..</div>
                      </div> 
                      
-                    <button><i class="fas fa-lock"></i> 짐인님의 비밀일기 보기</button>
-                   
+                    <button onclick= "getTextFile()"><i class="fas fa-lock" ></i> 짐인님의 비밀일기 보기</button>
+                    <div class="diary-box" id="secret-box">
+                      <div class="date-font">짐인님의 비밀일기</div>
+                      <div class="diary-contents" id="secret-contents"></div>
+                    </div>
                   </div>
                 
               </div>
 
-                  
-               
-
-  
             </div>  
             <!--메뉴-->
             <div class="column3">
@@ -130,5 +129,25 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function getTextFile(){
+        var input = document.createElement("input");
+        input.type = "file";
+        input.accept ="text/plain";
+        input.onchange = function (event) {
+          processFile(event.target.files[0]);
+        };
+        input.click();
+      }
+      function processFile(file) {
+        var reader = new FileReader();
+        reader.readAsText(file,"UTF-8");
+        reader.onload = function(){
+          document.getElementById("secret-contents").innerText = reader.result;
+          document.getElementById("secret-box").style.display = "block";
+        };
+      }
+      </script>
   </body>
 </html>
