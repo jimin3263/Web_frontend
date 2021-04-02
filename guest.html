@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./static/font.css" />
     <link rel="stylesheet" href="./static/layout.css" />
     <link rel="stylesheet" href="./static/home.css" />
+    <link rel="stylesheet" href="./static/guest.css" />
+    <script src="https://kit.fontawesome.com/133760b22f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="bookcover">
@@ -23,7 +25,7 @@
                 <div class="profile-picture">  
                   <img src="./static/images/profile.jpg" width= "130" height ="150" alt="프로필 사진"/>
                 </div>
-                <div class="profile-text"> 안녕 .. <br> 짐인님의 추억8282 <br>만나서 반갑습니당 </div>
+                <div class="profile-text"> 안녕 .. <br> 짐인님의 추억8282 <br>만나서 반갑..</div>
                 <div class="profile-dropdown">
                   <div class="dropdown-btn">
                     <div class="dropdown-title">파도타기</div>
@@ -46,40 +48,30 @@
                 <span class="font-top-change">짐인님의 추억 82</span>
                 <span class="font-top" style="margin-left: 170px;">https://jimin/mini-homepage</span>
               </div>
-              <div class="row2 border-gray">
-                <!--뉴스,방명록-->
-                <div class="title-box">Updated news</div>
-                <div class="line"></div>
-                <div class="contents">
-                  <div class="contents-news">
-                    <span class="news-font"> <div class="icon" id="album-icon">사진첩</div>코타키나발루 -(1)<br></span>
-                    <span class="news-font">  <div class="icon" id="album-icon">사진첩</div>코타키나발루 -(2)<br> </span>
-                    <span class="news-font"><div class="icon" id="board-icon">게시판</div>뇽안<br></span>
-                    <span class="news-font"><div class="icon" id="board-icon">게시판</div>안뇽<br></span>
-
-                  </div>
-                  <div class="contents-diary">
-                    <div class="menu-row">
-                      <div class="news-font"> 다이어리 <span class="number-font">0/25</span> </div> 
-                      <div class="news-font"> 사진첩<span class="number-font">0/25</span> </div>
+              <div class="row2 border-gray guest-container">
+                  <div class= "guest-title"> no.03 <span style="color: blue;"> &nbsp; 가랭이 </span> <i class="fas fa-home"></i>&nbsp; <span class="geust-title-date">(2020.06.19 16:30)</span></div>
+                  <div class="guest-book-container">
+                    <div class= "guest-book-picture background3">
+                        <img src="./static/images/guest2.jpeg"/>
                     </div>
+                    <div class = "guest-book-text">갑자기 미안한데 나도 참다 참다 말하는 건데 <br> 저번에도 그러더니 진짜 실망이야 <br> 나는 너에 대한 감정이 쌓이고 쌓이고 쌓이다보면 <br><br> 싸이먼 도미닉</div>
+                </div>  
 
-                    <div class="menu-row">
-                      <div class="news-font"> 게시판 <span class="number-font">0/25</span> </div>
-                      <div class="news-font"> 방명록 <span class="number-font">0/25</span> </div>
-                    </div>
-                  </div>
-                </div>
+                <div class= "guest-title"> no.02 <span style="color: blue;"> &nbsp; 댕댕이 </span> <i class="fas fa-home"></i>&nbsp; <span class="geust-title-date">(2020.04.10 16:30)</span></div>
+                  <div class="guest-book-container">
+                    <div class= "guest-book-picture background2"> </div>
+                    <div class = "guest-book-text">안녕 오늘 내 생일이야 <br> 축하해줘 <br> 매일 우는 식물은 ? <br> 우엉 </div>
+                </div>  
 
-                <!--미니룸-->
-                <div class="title-box">Miniroom</div>
-                <div class="line"></div>
-                <div class="miniroom">
-                  <img class="miniroom-gif" src="./static/images/peach.gif" alt="어피치">
-                </div>
- 
+                <div class= "guest-title"> no.01 <span style="color: blue;"> &nbsp; 시련이 </span> <i class="fas fa-home"></i>&nbsp; <span class="geust-title-date">(2020.01.02 16:30)</span></div>
+                  <div class="guest-book-container">
+                    <div class= "guest-book-picture background1"> </div>
+                    <div class = "guest-book-text">안녕 오늘은 내 생일이야 <br>가장 지루한 중학교는? <br>로딩 중</div>
+                </div>  
+
               </div>
             </div>  
+
             <!--메뉴-->
             <div class="column3">
               <div class="row1"> </div>
@@ -89,7 +81,9 @@
                 <div class="category-custom"> <a href="./photo.html"> 사진첩 </a> </div>
                 <div class="category-custom"> <a href="./guest.html"> 방명록 </a> </div>
   
-              </div>            
+              </div>
+              
+              
             </div>
 
           </div>        
